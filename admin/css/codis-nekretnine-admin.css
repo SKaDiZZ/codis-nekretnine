@@ -1,0 +1,31 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.lista {
+    padding: 15px;
+    margin: 0 -15px;
+    border-bottom: 1px solid #eeeeee;
+    background-color: inherit;
+    transition: 1s all;
+}
+.lista:hover {
+    background-color: #eeeeee;
+}
+.lista .dashicons {
+    margin-right: 15px;
+}
+.count {
+    font-weight: bold;
+    float: right;
+}
+.controls {
+    text-align: center;
+}
+.etiketa {
+    margin-right: 15px;
+}
+.ulaz {
+    width: 100%;
+}

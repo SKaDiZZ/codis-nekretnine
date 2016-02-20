@@ -1,0 +1,129 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"Last-Translator: Samir Kahvedzic <akirapowered@gmail.com>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: bs\n"
+
+#: ../admin/class-codis-nekretnine-admin.php:109
+msgid "nekretnine-post-type"
+msgstr "Nekretnine"
+
+#: ../admin/class-codis-nekretnine-admin.php:110
+msgid "nekretnina-singular"
+msgstr "Nekretnina"
+
+#: ../admin/class-codis-nekretnine-admin.php:111
+msgid "nekretnine-admin-menu"
+msgstr "Nekretnine"
+
+#: ../admin/class-codis-nekretnine-admin.php:112
+msgid "nekretnina-toolbar-add"
+msgstr "Nekretnina"
+
+#: ../admin/class-codis-nekretnine-admin.php:113
+msgid "dodaj-novu"
+msgstr "Dodaj novu"
+
+#: ../admin/class-codis-nekretnine-admin.php:114
+msgid "dodaj-novu-nekretninu"
+msgstr "Dodaj novu nekretninu"
+
+#: ../admin/class-codis-nekretnine-admin.php:115
+msgid "nova-nekretnina"
+msgstr "Nova nekretnina"
+
+#: ../admin/class-codis-nekretnine-admin.php:116
+msgid "uredi-nekretninu"
+msgstr "Uredi nekretninu"
+
+#: ../admin/class-codis-nekretnine-admin.php:117
+msgid "prikazi-nekretninu"
+msgstr "Prikazi nekretninu"
+
+#: ../admin/class-codis-nekretnine-admin.php:118
+msgid "izlistaj-nekretnine"
+msgstr "Izlistaj nekretnine"
+
+#: ../admin/class-codis-nekretnine-admin.php:119
+msgid "pretrazi-nekretnine"
+msgstr "Pretrazi nekretnine"
+
+#: ../admin/class-codis-nekretnine-admin.php:120
+msgid "glavna-nekretnina"
+msgstr "Glavna nekretnina"
+
+#: ../admin/class-codis-nekretnine-admin.php:121
+msgid "nema-nekretnina"
+msgstr "Trenutno nema dodanih nekretnina"
+
+#: ../admin/class-codis-nekretnine-admin.php:122
+msgid "nekretnine-kanta-prazna"
+msgstr "Trenutno nema nekretnina u kanti za smece"
+
+#: ../admin/class-codis-nekretnine-admin.php:123
+msgid "nekretnina-slika-glavna"
+msgstr "Slika nekretnine"
+
+#: ../admin/class-codis-nekretnine-admin.php:124
+msgid "nekretnina-postavi-sliku "
+msgstr "Postavi sliku nekretnine"
+
+#: ../admin/class-codis-nekretnine-admin.php:125
+msgid "nekretnina-ukloni-sliku"
+msgstr "Ukloni sliku nekretnine"
+
+#: ../admin/class-codis-nekretnine-admin.php:126
+msgid "nekretnina-koristi-kao-sliku"
+msgstr "Koristi kao sliku nekretnine"
+
+#: ../admin/class-codis-nekretnine-admin.php:127
+msgid "nekretnina-arhiva"
+msgstr "Arhiva nekretnina"
+
+#: ../admin/class-codis-nekretnine-admin.php:128
+msgid "nekretnina-dodaj-u"
+msgstr "Dodaj u nekretninu"
+
+#: ../admin/class-codis-nekretnine-admin.php:129
+msgid "nekretnina-dodano-u"
+msgstr "Dodano u nekretninu"
+
+#: ../admin/class-codis-nekretnine-admin.php:130
+msgid "nekretnina-filtriraj"
+msgstr "Filtriraj nekretnine"
+
+#: ../admin/class-codis-nekretnine-admin.php:131
+msgid "nekretnina-lista-navigacija"
+msgstr "Navigacija u listi nekretnina"
+
+#: ../admin/class-codis-nekretnine-admin.php:132
+msgid "nekretnina-lista"
+msgstr "Lista nekretnina"
+
+#: ../admin/class-codis-nekretnine-admin.php:173
+msgid "nekretnina-podaci-o-nekretnini-title"
+msgstr "Podaci o nekretnini"
+
+#: ../admin/class-codis-nekretnine-admin.php:228
+msgid "nekretnina-tip-oglasa"
+msgstr "Tip oglasa: "
+
+#: ../admin/class-codis-nekretnine-admin.php:231
+msgid "nekretnina-tip-oglasa-info"
+msgstr "Vrsta oglasa da li prodajete ili iznajmljujete nekretninu ?"
+
+#: ../admin/class-codis-nekretnine-admin.php:235
+msgid "nekretnina-tip-oglasa-prodaja"
+msgstr "Prodaja"
+
+#: ../admin/class-codis-nekretnine-admin.php:236
+msgid "nekretnina-tip-oglasa-iznajmljivanje"
+msgstr "Iznajmljivanje"
