@@ -56,22 +56,11 @@ class Codis_Nekretnine_Admin {
 
 	/**
 	 * Register the stylesheets for the admin area.
-	 *
+	 * @see https://developer.wordpress.org/reference/functions/wp_enqueue_style/
+	 * @uses wp_enqueue_style( $handle, $src, $deps, $ver, $media );
 	 * @since    1.0.0
 	 */
 	public function enqueue_styles() {
-
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Codis_Nekretnine_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Codis_Nekretnine_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
 
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/codis-nekretnine-admin.css', array(), $this->version, 'all' );
 
@@ -79,22 +68,11 @@ class Codis_Nekretnine_Admin {
 
 	/**
 	 * Register the JavaScript for the admin area.
-	 *
+	 * @see https://developer.wordpress.org/reference/functions/wp_enqueue_script/
+	 * @uses wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
 	 * @since    1.0.0
 	 */
 	public function enqueue_scripts() {
-
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Codis_Nekretnine_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Codis_Nekretnine_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/codis-nekretnine-admin.js', array( 'jquery' ), $this->version, false );
 
@@ -169,7 +147,6 @@ class Codis_Nekretnine_Admin {
 	 *
 	 * @see https://codex.wordpress.org/Function_Reference/remove_meta_box
 	 * @uses remove_meta_box( $id, $page, $context );
-	 *
 	 * @method void customize_meta_boxes();
 	 * @access public
 	 */
@@ -182,7 +159,6 @@ class Codis_Nekretnine_Admin {
 	 *
 	 * @see https://developer.wordpress.org/reference/functions/add_meta_box/
 	 * @uses add_meta_box ( string $id, string $title, callable $callback, string|array|WP_Screen $screen = null, string $context = 'advanced', string $priority = 'default', array $callback_args = null );
-	 *
 	 * @method void dodaj_podatke_o_nekretnini();
 	 * @access public
 	 */
