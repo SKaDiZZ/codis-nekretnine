@@ -119,23 +119,23 @@ class Codis_Nekretnine_Admin {
 	    );
 
 	    $args = array(
-	        'labels'             => $labels,
-	        'public'             => true,
-	        'taxonomies'		 => array('category','post_tag'),
-	        'publicly_queryable' => true,
-	        'show_ui'            => true,
-	        'show_in_menu'       => true,
-	        'menu_icon'          => 'dashicons-admin-home',
-	        'query_var'          => true,
-	        'rewrite'            => array( 'slug' => 'nekretnina' ),
-	        'capability_type'    => 'post',
-	        'has_archive'        => true,
-	        'hierarchical'       => false,
-	        'menu_position'      => null,
-			'show_in_rest'       => true,
-        	'rest_base'          => 'nekretnine-api',
-        	'rest_controller_class' => 'WP_REST_Posts_Controller',
-	        'supports'           => array( 'title', 'editor', 'thumbnail', 'custom-fields'),
+			'labels'				=> $labels,
+			'public'				=> true,
+			'taxonomies'			=> array('category','post_tag'),
+			'publicly_queryable' 	=> true,
+			'show_ui'            	=> true,
+			'show_in_menu'       	=> true,
+			'menu_icon'          	=> 'dashicons-admin-home',
+			'query_var'          	=> true,
+			'rewrite'            	=> array( 'slug' => 'nekretnina' ),
+			'capability_type'    	=> 'post',
+			'has_archive'        	=> true,
+			'hierarchical'       	=> false,
+			'menu_position'      	=> null,
+			'show_in_rest'       	=> true,
+			'rest_base'          	=> 'nekretnine-api',
+			'rest_controller_class' => 'WP_REST_Posts_Controller',
+			'supports'           	=> array( 'title', 'editor', 'thumbnail', 'custom-fields'),
 	    );
 
     	register_post_type( 'nekretnine', $args );
@@ -208,13 +208,13 @@ class Codis_Nekretnine_Admin {
 		$status = $custom['status'][0];
 		$cijena = $custom['cijena'][0];
 		$grad = $custom['grad'][0];
-	    $adresa = $custom['adresa'][0];
-	    $spavace_sobe = $custom['spavace_sobe'][0];
-	    $kupatila = $custom['kupatila'][0];
-	    $velicina = $custom['velicina'][0];
-	    $sprat = $custom['sprat'][0];
-	    $godina_gradnje = $custom['godina_gradnje'][0];
-	    $garazna_mjesta = $custom['garazna_mjesta'][0];
+		$adresa = $custom['adresa'][0];
+		$spavace_sobe = $custom['spavace_sobe'][0];
+		$kupatila = $custom['kupatila'][0];
+		$velicina = $custom['velicina'][0];
+		$sprat = $custom['sprat'][0];
+		$godina_gradnje = $custom['godina_gradnje'][0];
+		$garazna_mjesta = $custom['garazna_mjesta'][0];
 
 		 // Ukoliko je vrijednost za slajder nije postavljena tretiraj kao false
 		 if (!$slajder) { $slajder = 'false'; }
