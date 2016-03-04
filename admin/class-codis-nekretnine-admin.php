@@ -119,9 +119,9 @@ class Codis_Nekretnine_Admin {
 	    );
 
 	    $args = array(
-			'labels'				=> $labels,
-			'public'				=> true,
-			'taxonomies'			=> array('category','post_tag'),
+			'labels'		=> $labels,
+			'public'		=> true,
+			'taxonomies'		=> array('category','post_tag'),
 			'publicly_queryable' 	=> true,
 			'show_ui'            	=> true,
 			'show_in_menu'       	=> true,
@@ -168,10 +168,10 @@ class Codis_Nekretnine_Admin {
 			'podaci_o_nekretnini',
 			__('Podaci o nekretnini','nekretnina-podaci-o-nekretnini-title'),
 			array($this, 'podaci_o_nekretnini'),
-	    	'nekretnine',
-	    	'normal',
-	    	'high'
-	    	);
+                        'nekretnine',
+                        'normal',
+                        'high'
+                    );
 
 	}
 
@@ -223,10 +223,10 @@ class Codis_Nekretnine_Admin {
 		<table class="form-table">
 			<tbody>
 				<colgroup>
-	       			<col span="1" style="width: 20%;">
-	       			<col span="1" style="width: 40%;">
-	       			<col span="1" style="width: 40%;">
-    			</colgroup>
+                    <col span="1" style="width: 20%;">
+                    <col span="1" style="width: 40%;">
+                    <col span="1" style="width: 40%;">
+                </colgroup>
 				<tr>
 					<th scope="row">
 						<label for="tip_oglasa">
@@ -238,13 +238,13 @@ class Codis_Nekretnine_Admin {
 					</td>
 					<td>
 						<select name="tip_oglasa" class="ulaz">
-					     	<option value="prodaja" <?php selected( $tip_oglasa, 'prodaja'); ?>>
-								<?php echo __('Prodaja','nekretnina-tip-oglasa-prodaja'); ?>
-							</option>
-					     	<option value="iznajmljivanje" <?php selected( $tip_oglasa, 'iznajmljivanje'); ?>>
-								<?php echo __('Iznajmljivanje','nekretnina-tip-oglasa-iznajmljivanje'); ?>
-							</option>
-				    	</select>
+                                                    <option value="prodaja" <?php selected( $tip_oglasa, 'prodaja'); ?>>
+                                                            <?php echo __('Prodaja','nekretnina-tip-oglasa-prodaja'); ?>
+                                                    </option>
+                                                    <option value="iznajmljivanje" <?php selected( $tip_oglasa, 'iznajmljivanje'); ?>>
+                                                            <?php echo __('Iznajmljivanje','nekretnina-tip-oglasa-iznajmljivanje'); ?>
+                                                    </option>
+                                                </select>
 					</td>
 				</tr>
 				<tr>
@@ -258,37 +258,37 @@ class Codis_Nekretnine_Admin {
 					</td>
 					<td>
 						<select name="tip" class="ulaz">
-					     	<option value="kuca" <?php selected( $tip, 'kuca' ); ?>>
-								<?php echo __('Kuca','codis-nekretnine-add-kuca'); ?>
-							</option>
-					     	<option value="stan" <?php selected( $tip, 'stan' ); ?>>
-								<?php echo __('Stan','codis-nekretnine-add-stan'); ?>
-							</option>
-					     	<option value="vikendica" <?php selected( $tip, 'vikendica' ); ?>>
-								<?php echo __('Vikendica','codis-nekretnine-add-vikendica'); ?>
-							</option>
-					     	<option value="soba" <?php selected( $tip, 'soba' ); ?>>
-								<?php echo __('Soba','codis-nekretnine-add-soba'); ?>
-							</option>
-					     	<option value="montazni_objekat" <?php selected( $tip, 'montazni_objekat' ); ?>>
-								<?php echo __('Montazni Objekat','codis-nekretnine-add-montazni'); ?>
-							</option>
-					     	<option value="apartman" <?php selected( $tip, 'apartman' ); ?>>
-								<?php echo __('Apartman','codis-nekretnine-add-apartman'); ?>
-							</option>
-					     	<option value="garaza" <?php selected( $tip, 'garaza' ); ?>>
-								<?php echo __('Garaza','codis-nekretnine-add-garaza'); ?>
-							</option>
-					     	<option value="poslovni prostor" <?php selected( $tip, 'poslovni prostor' ); ?>>
-								<?php echo __('Poslovni prostor','codis-nekretnine-add-poslovni'); ?>
-							</option>
-					     	<option value="zemljiste" <?php selected( $tip, 'zemljiste' ); ?>>
-								<?php echo __('Zemljiste','codis-nekretnine-add-zemljiste'); ?>
-							</option>
-					     	<option value="ostalo" <?php selected( $tip, 'ostalo' ); ?>>
-								<?php echo __('Ostalo','codis-nekretnine-add-ostalo'); ?>
-							</option>
-				    	</select>
+                                                    <option value="kuca" <?php selected( $tip, 'kuca' ); ?>>
+                                                            <?php echo __('Kuca','codis-nekretnine-add-kuca'); ?>
+                                                    </option>
+                                                    <option value="stan" <?php selected( $tip, 'stan' ); ?>>
+                                                            <?php echo __('Stan','codis-nekretnine-add-stan'); ?>
+                                                    </option>
+                                                    <option value="vikendica" <?php selected( $tip, 'vikendica' ); ?>>
+                                                            <?php echo __('Vikendica','codis-nekretnine-add-vikendica'); ?>
+                                                    </option>
+                                                    <option value="soba" <?php selected( $tip, 'soba' ); ?>>
+                                                            <?php echo __('Soba','codis-nekretnine-add-soba'); ?>
+                                                    </option>
+                                                    <option value="montazni_objekat" <?php selected( $tip, 'montazni_objekat' ); ?>>
+                                                            <?php echo __('Montazni Objekat','codis-nekretnine-add-montazni'); ?>
+                                                    </option>
+                                                    <option value="apartman" <?php selected( $tip, 'apartman' ); ?>>
+                                                            <?php echo __('Apartman','codis-nekretnine-add-apartman'); ?>
+                                                    </option>
+                                                    <option value="garaza" <?php selected( $tip, 'garaza' ); ?>>
+                                                            <?php echo __('Garaza','codis-nekretnine-add-garaza'); ?>
+                                                    </option>
+                                                    <option value="poslovni prostor" <?php selected( $tip, 'poslovni prostor' ); ?>>
+                                                            <?php echo __('Poslovni prostor','codis-nekretnine-add-poslovni'); ?>
+                                                    </option>
+                                                    <option value="zemljiste" <?php selected( $tip, 'zemljiste' ); ?>>
+                                                            <?php echo __('Zemljiste','codis-nekretnine-add-zemljiste'); ?>
+                                                    </option>
+                                                    <option value="ostalo" <?php selected( $tip, 'ostalo' ); ?>>
+                                                            <?php echo __('Ostalo','codis-nekretnine-add-ostalo'); ?>
+                                                    </option>
+                                                </select>
 					</td>
 				</tr>
 				<tr>
@@ -321,19 +321,19 @@ class Codis_Nekretnine_Admin {
 					</td>
 					<td>
 						<select name="status" class="ulaz">
-					     	<option value="dostupno" <?php selected( $status, 'dostupno' ); ?>>
-								<?php echo __('Dostupno','codis-nekretnine-add-status-dostupno'); ?>
-							</option>
-					     	<option value="rezervisano" <?php selected( $status, 'rezervisano' ); ?>>
-								<?php echo __('Rezervisano','codis-nekretnine-add-status-rezervisano'); ?>
-							</option>
-					     	<option value="izdano" <?php selected( $status, 'izdano' ); ?>>
-								<?php echo __('Izdano','codis-nekretnine-add-status-izdano'); ?>
-							</option>
-					     	<option value="prodano" <?php selected( $status, 'prodano' ); ?>>
-								<?php echo __('Prodano','codis-nekretnine-add-status-prodano'); ?>
-							</option>
-				    	</select>
+                                                    <option value="dostupno" <?php selected( $status, 'dostupno' ); ?>>
+                                                            <?php echo __('Dostupno','codis-nekretnine-add-status-dostupno'); ?>
+                                                    </option>
+                                                    <option value="rezervisano" <?php selected( $status, 'rezervisano' ); ?>>
+                                                            <?php echo __('Rezervisano','codis-nekretnine-add-status-rezervisano'); ?>
+                                                    </option>
+                                                    <option value="izdano" <?php selected( $status, 'izdano' ); ?>>
+                                                            <?php echo __('Izdano','codis-nekretnine-add-status-izdano'); ?>
+                                                    </option>
+                                                    <option value="prodano" <?php selected( $status, 'prodano' ); ?>>
+                                                            <?php echo __('Prodano','codis-nekretnine-add-status-prodano'); ?>
+                                                    </option>
+                                                </select>
 					</td>
 				</tr>
 				<tr>
@@ -454,6 +454,30 @@ class Codis_Nekretnine_Admin {
 						<input type="number" name="garazna_mjesta" value="<?php echo $garazna_mjesta; ?>" class="ulaz">
 					</td>
 				</tr>
+				<tr>
+				<th scope="row">
+					<label for="slike_nekretnine">
+						<?php echo __('Slike nekretnine:','codis-nekretnine-slike'); ?>
+					</label>
+				</th>
+				<td>
+					<?php echo __('Slike nekretnine.','codis-nekretnine-slike-info'); ?>
+				</td>
+				<td>
+					<?php
+
+						$slike = get_attached_media( 'image' , $post->ID);
+
+						if ($slike) {
+							foreach ($slike as $slika) {
+
+								the_attachment_link( $slika->ID, false, false, false );
+							}
+						}
+					?>
+
+				</td>
+			</tr>
 			</tbody>
 		</table>
 

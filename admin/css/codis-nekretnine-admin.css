@@ -3,6 +3,8 @@
  * included in this file.
  */
 
+.postbox { background-color: inherit !important; }
+
 .lista {
     padding: 15px;
     margin: 0 -15px;
@@ -28,4 +30,7 @@
 }
 .ulaz {
     width: 100%;
+}
+#update-message {
+    display: none;
 }

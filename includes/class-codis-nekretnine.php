@@ -74,6 +74,7 @@ class Codis_Nekretnine {
 		$this->load_dependencies();
 		$this->set_locale();
 		$this->define_admin_hooks();
+		$this->define_dashboard_hooks();
 		$this->define_public_hooks();
 
 	}
@@ -112,6 +113,11 @@ class Codis_Nekretnine {
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-codis-nekretnine-admin.php';
+
+		/**
+		 * The class responsible for defining all actions that occur in dashboard.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-codis-nekretnine-dashboard.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
@@ -165,6 +171,24 @@ class Codis_Nekretnine {
 
 		// Sacuvaj podatke o nekretnini u bazu
 		$this->loader->add_action( 'save_post', $plugin_admin, 'spremi_podatke_o_nekretnini' );
+
+	}
+
+	/**
+	 * Register all of the hooks related to the dashboard area functionality
+	 * of the plugin.
+	 *
+	 * @since    1.0.0
+	 * @access   private
+	 */
+	private function define_dashboard_hooks() {
+
+		$plugin_dashboard = new Codis_Nekretnine_Dashboard( $this->get_plugin_name(), $this->get_version() );
+
+		$this->loader->add_action( 'wp_dashboard_setup', $plugin_dashboard, 'add_statistics_dashboard_widget' );
+		$this->loader->add_action( 'wp_dashboard_setup', $plugin_dashboard, 'add_slajder_dashboard_widget');
+		$this->loader->add_action('wp_ajax_update_slides', $plugin_dashboard, 'slajder_widget_ajax');
+
 
 	}
 

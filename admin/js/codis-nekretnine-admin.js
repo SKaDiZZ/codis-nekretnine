@@ -29,4 +29,51 @@
 	 * practising this, we should strive to set a better example in our own work.
 	 */
 
+	 $(document).ready(function() {
+
+		/* $('.slajderform').submit(function() {
+
+
+
+
+			 var data = {
+				 action: 'update_slides'
+
+			 };
+
+			 $.post(ajaxurl, data, function(response) {
+				alert(response);
+			 });
+
+			 return false;
+		 });
+
+
+		 */
+
+	 $('.removeslide').click(function(event) {
+
+		event.preventDefault();
+
+		var data = {
+			action: 'update_slides',
+			remove_from_slider: 'yes',
+			slide_id: event.target.id
+
+		};
+
+		var remove_button = $(this);
+
+		$.post(ajaxurl, data, function(response) {
+		    remove_button.closest('li').remove();
+			$('#update-message').append(response).show().delay(5000).fadeOut();
+	   });
+
+		return false;
+
+	 });
+
+ });
+
+
 })( jQuery );
